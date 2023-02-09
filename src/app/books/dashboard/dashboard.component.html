@@ -1,0 +1,44 @@
+<app-header [title]="'Books App'">
+</app-header>
+
+<main>
+    <div class="upper-bar">
+        <mat-card class="activos">
+            <mat-card-header>
+                <mat-card-title>Books</mat-card-title>
+                <mat-card-subtitle>Registered</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <h2>{{dashboard.totalBooks}}</h2>
+            </mat-card-content>
+        </mat-card>
+        
+        <mat-card class="inactivos">
+            <mat-card-header>
+                <mat-card-title>Books </mat-card-title>
+                <mat-card-subtitle>Registered Today</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <h2>{{dashboard.totalBooksRegToday}}</h2>
+            </mat-card-content>
+        </mat-card>
+        
+        <mat-card class="addresses">
+            <mat-card-header>
+                <mat-card-title>Books </mat-card-title>
+                <mat-card-subtitle>Registered This Month</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <h2>{{dashboard.totalBooksRegThisMonth}}</h2>
+            </mat-card-content>
+        </mat-card>
+        
+        <button mat-raised-button color="primary" [routerLink]="['./register']" routerLinkActive="router-link-active" >
+            <mat-icon>add</mat-icon>
+            <span>Add Book</span>
+        </button>
+        
+    </div>
+
+    <app-list></app-list>
+</main>

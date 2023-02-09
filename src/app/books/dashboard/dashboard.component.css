@@ -1,0 +1,41 @@
+.upper-bar {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-evenly;
+    justify-self: center;
+  }
+  
+  .mat-card,
+  button {
+    padding: 10px;
+    background-color: gold;
+    margin-right: 20px;
+    width: 220px;
+    height: 120px !important;
+    text-align: center !important;
+  }
+  
+  ::ng-deep .mat-card-header-text {
+    margin: 0 16px;
+    width: 100%;
+  }
+  
+  .activos {
+    background-color: #44b85f;
+  }
+  
+  .inactivos {
+    background-color: #ec7979;
+  }
+  
+  .addresses {
+    background-color: #d575f1;
+  }
+  
+  .more-addresses {
+      background-color: cadetblue;
+  }
